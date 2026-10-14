@@ -2,7 +2,7 @@
 
 Frontend del sistema de mesa de entradas municipal. Incluye el modeler BPMN con el que se dibujan los circuitos de cada trámite.
 
-Backend: [gestor-expedientes-api](https://github.com/Jmurga16/gestor-expedientes-api) · Demo: https://traza.devkora.com
+Backend: [gestor-expedientes-api](https://github.com/josemurgadev/gestor-expedientes-api) · Demo: https://traza.devkora.com
 
 ![El modeler BPMN con un carril por área: el circuito que después recorre cada expediente](docs/img/modeler-carriles.png)
 
@@ -62,7 +62,7 @@ Los permisos de cada expediente los decide la API (`/demanda/{id}/permisos`); la
 
 ## Levantarlo local
 
-Hace falta Node 20 o 22 y la API andando en `http://localhost:8080` (ver [gestor-expedientes-api](https://github.com/Jmurga16/gestor-expedientes-api)).
+Hace falta Node 20 o 22 y la API andando en `http://localhost:8080` (ver [gestor-expedientes-api](https://github.com/josemurgadev/gestor-expedientes-api)).
 
 ```bash
 npm install
@@ -87,7 +87,7 @@ La demo del VPS usa la configuración `vps`, donde la API y los archivos salen d
 npm run build -- --configuration production,vps
 ```
 
-El `Dockerfile` construye esa variante y la sirve con Caddy (`deploy/Caddyfile`). Se publica junto con la API, con el `deploy.sh` de [gestor-expedientes-api](https://github.com/Jmurga16/gestor-expedientes-api).
+El `Dockerfile` construye esa variante y la sirve con Caddy (`deploy/Caddyfile`). Se publica junto con la API, con el `deploy.sh` de [gestor-expedientes-api](https://github.com/josemurgadev/gestor-expedientes-api).
 
 ## Tests
 
